@@ -15,7 +15,7 @@ Open `index.html` in a browser. No build tools or paid services are required.
 7. After publishing, your site will be available at `https://YOUR-USERNAME.github.io/`.
 
 ## Personalise before publishing
-- The contact button links to the GitHub profile; update it if another contact method is preferred.
+- The contact section displays `mffahim362758@gmail.com` and opens the visitor's email app.
 - Add your real GitHub, LinkedIn and other social links when ready.
 - Replace the sample project cards with real projects as you complete them.
 - The current profile avatar uses initials (MF), so you do not need a photo to launch.
