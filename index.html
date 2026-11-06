@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="MF.FAHIM — Student, curious learner and aspiring technology builder.">
   <meta name="theme-color" content="#f7f9ff">
+  <meta property="og:title" content="MF.FAHIM — Personal Portfolio">
+  <meta property="og:description" content="Student from Bangladesh exploring technology, AI and ideas for tomorrow.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mffahim-sudo.github.io/">
+  <link rel="canonical" href="https://mffahim-sudo.github.io/">
   <title>MF.FAHIM — Personal Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +20,8 @@
   <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
   <header class="site-header">
     <a class="brand" href="#home" aria-label="MF.FAHIM home"><span class="brand-mark">M<span>F</span></span><span>MF.FAHIM</span></a>
-    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
-    <nav class="nav">
+    <button class="menu-toggle" aria-label="Open navigation" aria-controls="site-navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" id="site-navigation">
       <a href="#about">About</a><a href="#focus">Focus</a><a href="#projects">Projects</a><a href="#journey">Journey</a>
       <a class="nav-contact" href="#contact">Let’s connect <span>↗</span></a>
     </nav>
@@ -76,10 +81,9 @@
       <div class="section-label reveal"><span>03 / SELECTED WORK</span><span class="label-line"></span></div>
       <div class="projects-heading reveal"><h2>Ideas become<br><span>experiments.</span></h2><p>A collection of things I make, learn and explore. More projects will appear here as I build them.</p></div>
       <div class="project-list">
-        <article class="project-row reveal"><div class="project-index">01</div><div class="project-main"><span class="project-type">PERSONAL BRAND · WEB</span><h3>My personal website</h3><p>A home for my learning journey, projects and future milestones.</p></div><div class="project-status">IN PROGRESS</div><span class="project-arrow">↗</span></article>
+        <article class="project-row reveal"><div class="project-index">01</div><div class="project-main"><span class="project-type">PERSONAL BRAND · WEB</span><h3><a href="https://mffahim-sudo.github.io/" target="_blank" rel="noopener noreferrer">My personal website ↗</a></h3><p>A home for my learning journey, projects and future milestones.</p></div><div class="project-status">LIVE</div><span class="project-arrow" aria-hidden="true">↗</span></article>
         <article class="project-row reveal"><div class="project-index">02</div><div class="project-main"><span class="project-type">COMING NEXT</span><h3>First AI experiment</h3><p>An opportunity to turn something I’m learning into a useful little tool.</p></div><div class="project-status">PLANNED</div><span class="project-arrow">↗</span></article>
       </div>
-      <p class="edit-note">As you complete projects, replace these sample cards with your real work and links.</p>
     </section>
 
     <section class="journey section-wrap" id="journey">
@@ -99,7 +103,7 @@
         <div class="contact-kicker">HAVE AN IDEA OR JUST WANT TO SAY HELLO?</div>
         <h2>Let’s make<br><span>something meaningful.</span></h2>
         <p>I’m always glad to connect with curious people, learners and creators.</p>
-        <a class="button button-light" href="mailto:YOUR_EMAIL@example.com">Email me <span>↗</span></a>
+        <a class="button button-light" href="https://github.com/mffahim-sudo" target="_blank" rel="noopener noreferrer">Connect on GitHub <span>↗</span></a>
         <div class="contact-decoration">MF.</div>
       </div>
     </section>
@@ -107,7 +111,7 @@
 
   <footer class="footer section-wrap">
     <a class="brand" href="#home"><span class="brand-mark">M<span>F</span></span><span>MF.FAHIM</span></a>
-    <span class="footer-note">Made with curiosity in Bangladesh.</span>
+    <a class="footer-note" href="https://github.com/mffahim-sudo" target="_blank" rel="noopener noreferrer">GitHub profile ↗</a>
     <span class="copyright">© <span id="year"></span> MF.FAHIM</span>
   </footer>
   <script src="script.js"></script>
