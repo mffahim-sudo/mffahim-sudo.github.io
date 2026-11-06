@@ -4,3 +4,5 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*{transition:none!important}}
 
 :focus-visible{outline:3px solid #7392c7;outline-offset:4px}::selection{background:#dce8fb;color:#14264a}.project-main h3 a:hover{color:#5277b4}.footer-note:hover{color:#315da8}
+
+.contact-email{display:inline-block;position:relative;z-index:1;margin:18px 0 0 14px;color:#c2cfe5;font-size:13px}.contact-email:hover{color:#fff}
