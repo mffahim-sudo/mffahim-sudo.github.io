@@ -36,3 +36,21 @@
   .project-main h3{font-size:18px}
 }
 @media(prefers-reduced-motion:reduce){.project-row,.project-arrow{transition:none}}
+
+.poster-jump{display:inline-flex;align-items:center;gap:12px;margin:0 0 28px;padding:12px 17px;border:1px solid #dce5f5;border-radius:30px;background:#fff;color:var(--navy);font-size:12px;font-weight:700;box-shadow:0 7px 20px rgba(46,51,102,.06);transition:transform .2s,border-color .2s}
+.poster-jump:hover{transform:translateY(-2px);border-color:#9a83dd}
+.poster-jump span{color:#795fc4;font-size:16px}
+.poster-gallery{margin:35px 0 72px;padding:32px;background:linear-gradient(135deg,#f1f5ff,#fbf7ff);border:1px solid #e4e8f5;border-radius:18px}
+.poster-heading{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:24px}
+.poster-heading h3{font-family:var(--display);font-size:30px;color:var(--navy);margin:8px 0 0}
+.poster-heading>p{max-width:330px;margin:0 0 4px;color:#75839a;font-size:13px;line-height:1.7}
+.poster-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.poster-card{min-width:0;background:#fff;border:1px solid #e7eaf4;border-radius:12px;overflow:hidden;box-shadow:0 8px 22px rgba(36,49,90,.06);transition:transform .2s,box-shadow .2s}
+.poster-card:hover{transform:translateY(-5px);box-shadow:0 16px 30px rgba(36,49,90,.13)}
+.poster-card a{display:block;background:#eef1f8;overflow:hidden}
+.poster-card img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .3s}
+.poster-card:hover img{transform:scale(1.025)}
+.poster-card h4{margin:13px 12px 4px;color:var(--navy);font-family:var(--display);font-size:13px;line-height:1.4}
+.poster-card p{margin:0 12px 15px;color:#8793a8;font-size:11px}
+@media(max-width:900px){.poster-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:600px){.poster-gallery{margin:25px 0 55px;padding:20px 15px}.poster-heading{display:block}.poster-heading>p{margin-top:10px}.poster-heading h3{font-size:26px}.poster-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.poster-card h4{font-size:12px;margin-left:9px;margin-right:9px}.poster-card p{margin-left:9px;margin-right:9px}}
