@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MF.FAHIM's graphic design and video editing portfolio.">
+  <meta name="theme-color" content="#f7f8ef">
+  <title>My Work — MF.FAHIM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=20261106-workpage">
+  <style>
+    :root{--garden:#f7f8ef;--leaf:#5b8c51;--sun:#ffcf45;--soil:#835c45}
+    body{background:var(--garden)}
+    .garden-hero{max-width:1170px;margin:auto;padding:78px 34px 66px;text-align:center}
+    .garden-kicker{font-size:10px;letter-spacing:.2em;font-weight:800;color:#78946b}
+    .garden-hero h1{font:800 clamp(42px,7vw,76px)/1.06 var(--display);letter-spacing:-.06em;color:#1c3e39;margin:18px 0}
+    .garden-hero h1 span{color:#d59125}
+    .garden-lead{max-width:540px;margin:0 auto;color:#718078;font-size:15px;line-height:1.8}
+    .garden-cards{max-width:920px;margin:30px auto 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+    .garden-card{position:relative;min-height:455px;overflow:hidden;border:1px solid #e7eadb;border-radius:26px;background:linear-gradient(180deg,#fffef8,#f1f5e9);box-shadow:0 18px 45px #425a3310;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:16px 18px 28px;transition:transform .25s,box-shadow .25s}
+    .garden-card:hover{transform:translateY(-7px);box-shadow:0 24px 50px #425a3325}
+    .garden-card::before{content:"";position:absolute;width:270px;height:270px;border-radius:50%;top:46px;background:#f8e7a94d}
+    .plant{width:245px;height:345px;position:absolute;top:12px;z-index:1}
+    .plant .stem{stroke:#56834a;stroke-width:13;stroke-linecap:round;fill:none}
+    .plant .leaf{fill:#75a95e;stroke:#477544;stroke-width:3}
+    .plant .petal{fill:#ffca3a;stroke:#f2a91f;stroke-width:2}
+    .plant .center{fill:#63442f;stroke:#3d2d24;stroke-width:5}
+    .plant-alt .petal{fill:#f5ad34;stroke:#dc8224}
+    .plant-alt .center{fill:#523929}
+    .pot{position:relative;z-index:2;width:178px;height:130px;margin-bottom:2px;clip-path:polygon(4% 0,96% 0,82% 100%,18% 100%);background:linear-gradient(105deg,#d28a55,#b96942 55%,#a95439);display:grid;place-items:center;padding-top:16px;filter:drop-shadow(0 10px 6px #533c2925)}
+    .pot-label{font:800 24px var(--display);letter-spacing:.02em;color:#fff8e7;text-shadow:0 2px 4px #603d2b55}
+    .garden-card small{position:relative;z-index:2;margin-top:15px;color:#718078;font-size:11px;letter-spacing:.11em;font-weight:700}
+    .garden-card .card-hint{position:absolute;right:18px;top:18px;z-index:3;width:32px;height:32px;border-radius:50%;background:#fff;color:#65815c;display:grid;place-items:center}
+    .work-section{max-width:1170px;margin:30px auto 0;padding:66px 34px 90px;scroll-margin-top:28px}
+    .work-section:nth-of-type(even){background:#fff;border-radius:28px}
+    .work-section-head{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:28px}
+    .work-section-head .eyebrow{color:#78946b;font-size:10px;letter-spacing:.16em;font-weight:800}
+    .work-section-head h2{font:800 clamp(30px,4vw,44px)/1.1 var(--display);letter-spacing:-.05em;color:#1c3e39;margin:10px 0 0}
+    .work-section-head p{max-width:380px;color:#718078;font-size:13px;line-height:1.7;margin:0 0 4px}
+    .poster-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+    .poster-card{background:#fff;border:1px solid #e7eadf;border-radius:14px;overflow:hidden;box-shadow:0 10px 25px #3247330c;transition:transform .2s,box-shadow .2s}
+    .poster-card:hover{transform:translateY(-5px);box-shadow:0 18px 34px #3247331e}
+    .poster-card a{display:block;background:#edf0e6}
+    .poster-card img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+    .poster-card h3{font:700 13px/1.4 var(--display);color:#1c3e39;margin:13px 12px 5px}
+    .poster-card p{font-size:11px;color:#7d897c;margin:0 12px 15px}
+    .video-panel{min-height:220px;padding:32px;border-radius:18px;background:linear-gradient(135deg,#e5f0dc,#fff4d5);display:flex;align-items:center;gap:22px}
+    .video-icon{flex:none;width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:#fff;color:#d59125;font-size:25px;box-shadow:0 8px 20px #354e2c14}
+    .video-panel h3{font:700 20px var(--display);color:#1c3e39;margin:0 0 8px}
+    .video-panel p{font-size:13px;line-height:1.7;color:#718078;margin:0;max-width:570px}
+    .back-top{display:inline-block;margin-top:22px;color:#557650;font-size:12px;font-weight:700}
+    @media(max-width:900px){.poster-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.garden-cards{max-width:760px}}
+    @media(max-width:600px){.garden-hero{padding:55px 20px 40px}.garden-cards{gap:12px}.garden-card{min-height:345px;padding-left:8px;padding-right:8px;border-radius:18px}.plant{width:180px;height:270px;top:8px}.garden-card::before{width:190px;height:190px;top:35px}.pot{width:142px;height:105px}.pot-label{font-size:19px}.garden-card small{font-size:9px;letter-spacing:.06em}.garden-card .card-hint{right:10px;top:10px;width:27px;height:27px}.work-section{padding:48px 20px 60px;margin-top:12px}.work-section-head{display:block}.work-section-head p{margin-top:10px}.poster-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.video-panel{align-items:flex-start;padding:22px 18px}.video-icon{width:48px;height:48px}.video-panel h3{font-size:17px}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Back to MF.FAHIM home"><span class="brand-mark">M<span>F</span></span><span>MF.FAHIM</span></a>
+    <nav class="nav" aria-label="Main navigation"><a href="index.html#about">About</a><a href="index.html#focus">Focus</a><a href="index.html#projects">Projects</a><a class="nav-contact" href="index.html#contact">Let’s connect <span>↗</span></a></nav>
+  </header>
+  <main>
+    <section class="garden-hero" id="top">
+      <div class="garden-kicker">A LITTLE GARDEN OF IDEAS</div>
+      <h1>My <span>creative</span> work</h1>
+      <p class="garden-lead">Every project starts as a small idea. Choose a sunflower to explore the things I make and learn.</p>
+      <div class="garden-cards">
+        <a class="garden-card" href="#posters" aria-label="Open Poster Design gallery">
+          <span class="card-hint" aria-hidden="true">↘</span>
+          <svg class="plant" viewBox="0 0 240 350" aria-hidden="true">
+            <path class="stem" d="M120 165 C120 220 117 263 120 305"/>
+            <path class="leaf" d="M118 244 C78 213 48 225 55 251 C67 274 96 269 118 244Z"/>
+            <path class="leaf" d="M121 275 C160 237 191 244 184 269 C175 292 145 295 121 275Z"/>
+            <g transform="translate(120 104)"><g class="petal">
+              <ellipse cy="-47" rx="15" ry="39"/><ellipse cy="-47" rx="15" ry="39" transform="rotate(30)"/><ellipse cy="-47" rx="15" ry="39" transform="rotate(60)"/><ellipse cy="-47" rx="15" ry="39" transform="rotate(90)"/><ellipse cy="-47" rx="15" ry="39" transform="rotate(120)"/><ellipse cy="-47" rx="15" ry="39" transform="rotate(150)"/><ellipse cy="-47" rx="15" ry="39" transform="rotate(180)"/><ellipse cy="-47" rx="15" ry="39" transform="rotate(210)"/><ellipse cy="-47" rx="15" ry="39" transform="rotate(240)"/><ellipse cy="-47" rx="15" ry="39" transform="rotate(270)"/><ellipse cy="-47" rx="15" ry="39" transform="rotate(300)"/><ellipse cy="-47" rx="15" ry="39" transform="rotate(330)"/>
+            </g><circle class="center" r="31"/><circle cx="-10" cy="-9" r="3" fill="#b88a55"/><circle cx="9" cy="8" r="3" fill="#b88a55"/></g>
+          </svg>
+          <span class="pot"><span class="pot-label">Poster</span></span>
+          <small>GRAPHIC DESIGN</small>
+        </a>
+        <a class="garden-card" href="#videos" aria-label="Open Video Editing section">
+          <span class="card-hint" aria-hidden="true">↘</span>
+          <svg class="plant plant-alt" viewBox="0 0 240 350" aria-hidden="true">
+            <path class="stem" d="M120 165 C120 220 117 263 120 305"/>
+            <path class="leaf" d="M118 244 C78 213 48 225 55 251 C67 274 96 269 118 244Z"/>
+            <path class="leaf" d="M121 275 C160 237 191 244 184 269 C175 292 145 295 121 275Z"/>
+            <g transform="translate(120 104)"><g class="petal">
+              <ellipse cy="-47" rx="15" ry="39"/><ellipse cy="-47" rx="15" ry="39" transform="rotate(30)"/><ellipse cy="-47" rx="15" ry="39" transform="rotate(60)"/><ellipse cy="-47" rx="15" ry="39" transform="rotate(90)"/><ellipse cy="-47" rx="15" ry="39" transform="rotate(120)"/><ellipse cy="-47" rx="15" ry="39" transform="rotate(150)"/><ellipse cy="-47" rx="15" ry="39" transform="rotate(180)"/><ellipse cy="-47" rx="15" ry="39" transform="rotate(210)"/><ellipse cy="-47" rx="15" ry="39" transform="rotate(240)"/><ellipse cy="-47" rx="15" ry="39" transform="rotate(270)"/><ellipse cy="-47" rx="15" ry="39" transform="rotate(300)"/><ellipse cy="-47" rx="15" ry="39" transform="rotate(330)"/>
+            </g><circle class="center" r="31"/><circle cx="-10" cy="-9" r="3" fill="#b88a55"/><circle cx="9" cy="8" r="3" fill="#b88a55"/></g>
+          </svg>
+          <span class="pot"><span class="pot-label">Video</span></span>
+          <small>VIDEO EDITING</small>
+        </a>
+      </div>
+    </section>
+
+    <section class="work-section" id="posters">
+      <div class="work-section-head"><div><div class="eyebrow">01 / GRAPHIC DESIGN</div><h2>Poster Design</h2></div><p>Five concept posters about wellbeing, climate action, reading, online safety and the joy of learning. Select a poster to view it full size.</p></div>
+      <div class="poster-grid">
+        <article class="poster-card"><a href="posters/01_pause-and-breathe.svg" target="_blank" rel="noopener noreferrer"><img src="posters/01_pause-and-breathe.svg" alt="Pause and Breathe poster about mental wellbeing" loading="lazy"></a><h3>Pause and Breathe</h3><p>Mental wellbeing</p></article>
+        <article class="poster-card"><a href="posters/02_small-steps-big-change.svg" target="_blank" rel="noopener noreferrer"><img src="posters/02_small-steps-big-change.svg" alt="Small Steps, Big Change poster about climate action" loading="lazy"></a><h3>Small Steps, Big Change</h3><p>Climate action</p></article>
+        <article class="poster-card"><a href="posters/03_read-more-see-more.svg" target="_blank" rel="noopener noreferrer"><img src="posters/03_read-more-see-more.svg" alt="Read More, See More poster celebrating reading" loading="lazy"></a><h3>Read More, See More</h3><p>Reading and curiosity</p></article>
+        <article class="poster-card"><a href="posters/04_think-before-you-click.svg" target="_blank" rel="noopener noreferrer"><img src="posters/04_think-before-you-click.svg" alt="Think Before You Click poster about digital safety" loading="lazy"></a><h3>Think Before You Click</h3><p>Digital safety</p></article>
+        <article class="poster-card"><a href="posters/05_learning-has-no-limit.svg" target="_blank" rel="noopener noreferrer"><img src="posters/05_learning-has-no-limit.svg" alt="Learning Has No Limit poster about education" loading="lazy"></a><h3>Learning Has No Limit</h3><p>Education</p></article>
+      </div>
+      <a class="back-top" href="#top">↑ Back to the sunflowers</a>
+    </section>
+
+    <section class="work-section" id="videos">
+      <div class="work-section-head"><div><div class="eyebrow">02 / VIDEO EDITING</div><h2>Video Projects</h2></div><p>My video editing projects will be collected here as I add them to my portfolio.</p></div>
+      <div class="video-panel"><div class="video-icon" aria-hidden="true">▶</div><div><h3>Videos are growing here</h3><p>This section is ready for my edited videos. I can add a video thumbnail and a YouTube or Drive link for each project when it is ready.</p></div></div>
+      <a class="back-top" href="#top">↑ Back to the sunflowers</a>
+    </section>
+  </main>
+  <footer class="footer section-wrap"><a class="brand" href="index.html"><span class="brand-mark">M<span>F</span></span><span>MF.FAHIM</span></a><a class="footer-note" href="index.html#projects">Back to my portfolio ↗</a><span class="copyright">© 2026 MF.FAHIM</span></footer>
+</body>
+</html>
